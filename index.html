@@ -2,10 +2,13 @@
 <html lang="en">
   <head>
     <style>
+      html { overflow-y: scroll; }
+
       body {
       margin: 0;
       padding: 0;
       font-family: "Times New Roman";
+
       }
       a {
       color: #8B0000;
@@ -16,18 +19,20 @@
       margin: 0 auto;
       width:100%;
       padding-right:50px;
+      position: absolute;
+ 
       }
       .name {
-      position: fixed;
+            position: relative;
       font-size: 18px;
-      text-align: center;
+      text-align: left;
       left: 40px;
       top: 30px;
       }
       .info{
-      position: fixed; 
+      position: absolute; 
       width: 100%;
-      top: 100px;
+      top: 50px;
       font-size: 20px;
       }
       .about {
@@ -52,26 +57,54 @@
     </div>
 
     <div class="wrapper">
-    
-    <div class="info">
+          <div class="info">
+
       <div class="about">
 	I am currently a PhD student doing research at the intersection of statistical mechanics, quantum field theory and machine learning. I am supervised by Profs.&thinsp;<a href="http://pyweb.swan.ac.uk/~aarts/">Gert Aarts</a> and <a href="https://www.swansea.ac.uk/staff/science/maths/lucini-b/">Biagio Lucini</a>.
       </div>
    
       <div class="publications">
-	<h3 style="color:#8B0000"><u>Publications and Preprints</u></h3>
+	<h3 style="color:#8B0000"><u>Journal Articles and Preprints</u></h3>
 
-	
 	<ul>
-	  <li><a href="https://arxiv.org/abs/2102.09449"> Quantum field-theoretic machine learning </a>, D.&thinsp;Bachtis, G.&thinsp;Aarts, B.&thinsp;Lucini,  (<a href="https://arxiv.org/abs/2102.09449">arXiv</a>), Feb. 2021. </li>
-	  <li><a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.3.013134"> Adding machine learning within Hamiltonians: Renormalization group transformations, symmetry breaking and restoration </a>, D.&thinsp;Bachtis, G.&thinsp;Aarts, B.&thinsp;Lucini,  (<a href="https://arxiv.org/abs/2010.00054">arXiv</a>), Phys. Rev. Research 3, 013134, Feb. 2021. </li>
-  <li><a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.102.053306"> Mapping distinct phase transitions to a neural network </a>, D.&thinsp;Bachtis, G.&thinsp;Aarts, B.&thinsp;Lucini, (<a href="https://arxiv.org/abs/2007.00355">arXiv</a>), Phys. Rev. E 102, 053306, Nov. 2020. </li>
-<li><a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.102.033303"> Extending machine learning classification capabilities with histogram reweighting </a>, D.&thinsp;Bachtis, G.&thinsp;Aarts, B.&thinsp;Lucini, (<a href="https://arxiv.org/abs/2004.14341">arXiv</a>), Phys. Rev. E 102, 033303, Sep. 2020. </li>
-</ul> 
+	  	  <li><a href="https://arxiv.org/abs/2107.00466"> Inverse renormalization group in quantum field theory </a>, D.&thinsp;Bachtis, G.&thinsp;Aarts, F.&thinsp;Di&thinsp;Renzo, B.&thinsp;Lucini,  <a href="https://arxiv.org/abs/2107.00466">arXiv:2107.00466</a>. </li>
+		  <li><a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.103.074510"> Quantum field-theoretic machine learning </a>, D.&thinsp;Bachtis, G.&thinsp;Aarts, B.&thinsp;Lucini, Phys.&thinsp;Rev.&thinsp;D <b>103</b>, 074510,  <a href="https://arxiv.org/abs/2102.09449">arXiv:2102.09449</a>. </li>
+		  <li><a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.3.013134"> Adding machine learning within Hamiltonians: Renormalization group transformations, symmetry breaking and restoration </a>, D.&thinsp;Bachtis, G.&thinsp;Aarts, B.&thinsp;Lucini, Phys.&thinsp;Rev.&thinsp;Research <b>3</b>, 013134,  <a href="https://arxiv.org/abs/2010.00054">arXiv:2010.00054</a>. </li>
+		  <li><a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.102.053306"> Mapping distinct phase transitions to a neural network </a>, D.&thinsp;Bachtis, G.&thinsp;Aarts, B.&thinsp;Lucini, Phys.&thinsp;Rev.&thinsp;E <b>102</b>, 053306,  <a href="https://arxiv.org/abs/2007.00355">arXiv:2007.00355</a>. </li>
+		  <li><a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.102.033303"> Extending machine learning classification capabilities with histogram reweighting </a>, D.&thinsp;Bachtis, G.&thinsp;Aarts, B.&thinsp;Lucini, Phys.&thinsp;Rev.&thinsp;E <b>102</b>, 033303,  <a href="https://arxiv.org/abs/2004.14341">arXiv:2004.14341</a>. </li>
+      </div>
+
+       <div class="publications">
+	<h3 style="color:#8B0000"><u>Conference Proceedings</u></h3>
+	<ul>
+	  <li><a href="https://arxiv.org/abs/2110.10928"> Quantum field theories, Markov random fields and machine learning </a>, D.&thinsp;Bachtis, G.&thinsp;Aarts, B.&thinsp;Lucini, Contribution to <a href="https://ccp2021.complexity-coventry.org/">CCP 2021</a>,  <a href="https://arxiv.org/abs/2110.10928">arXiv:2110.10928</a>. </li>
+	  <li><a href="https://arxiv.org/abs/2109.08497"> Interpreting machine learning functions as physical observables </a>,  G.&thinsp;Aarts, D.&thinsp;Bachtis, B.&thinsp;Lucini, Contribution to <a href="https://indico.cern.ch/event/1006302/">Lattice 2021</a>,  <a href="https://arxiv.org/abs/2109.08497">arXiv:2109.08497</a>. </li>
+	  	  	<li><a href="https://arxiv.org/abs/2109.07730">Machine learning with quantum field theories </a>, D.&thinsp;Bachtis, G.&thinsp;Aarts,  B.&thinsp;Lucini, Contribution to <a href="https://indico.cern.ch/event/1006302/">Lattice 2021</a>,  <a href="https://arxiv.org/abs/2109.07730">arXiv:2109.07730</a>. </li>
+	</ul>
+
+      </div>
+
+
+
+
+
+
+	<div class="publications">
 	<h3 style="color:#8B0000"><u>Talks</u></h3>
 	<ul>
-	  <li> Machine learning as a physical observable: Renormalization, symmetry breaking and histogram reweighting, Coventry University, 27 Jan. 2021. </li>
-	  <li> Probabilistic graphical models: Markov random fields and Boltzmann machines, Topological data analysis seminar, Swansea University, 9 Jan. 2021. </li>
+	  <li>Inverse renormalization group in quantum field theory: Evading the critical slowing down effect, Brookhaven National Laboratory, USA, 29 Oct. 2021. </li>
+	  <li>Quantum field-theoretic machine learning: A probabilistic perspective, Department of Statistics, University of Leeds, United Kingdom, 15 Oct. 2021.</li>
+	  <li>Machine learning with quantum field theories, <a href="https://indico.ectstar.eu/event/77/">Machine Learning for High Energy Physics, on and off the Lattice </a>, ECT* - European Centre for Theoretical Studies in Nuclear Physics and Related Areas, Italy, 27 Sep.-1 Oct. 2021. </li>
+	  <li> Quantum field theories, Markov random fields, and machine learning, <a href="https://ccp2021.complexity-coventry.org/">CCP2021:XXXII IUPAP Conference on Computational Physics </a>, Coventry University, United Kingdom, 1-5 Aug. 2021 </li>
+	  <li> Machine learning with quantum field theories, <a href="https://indico.cern.ch/event/1006302/">Lattice 2021</a>, Massachusetts Institute of Technology, USA, 26-30 Jul. 2021. </li>
+	  <li> Quantum field-theoretic machine learning, <a href="https://cometscome.github.io/DLAP2020/">Deep Learning and Physics</a>, Japan, 15 Jul. 2021. </li>
+	  <li> Quantum field-theoretic machine learning, Cyprus Institute,   9 Jul. 2021. </li>
+	  <li> Quantum field-theoretic machine learning,<a href="https://indico.in2p3.fr/event/24019/"> Strong and Electro-Weak Matter 2021</a>,   28 Jun.-2 Jul. 2021. </li>
+	  <li> Quantum field-theoretic machine learning, <a href="https://indico.mitp.uni-mainz.de/event/231/overview">Machine Learning Techniques in Lattice QCD</a>, MITP, Johannes Gutenberg University,   24-28 May 2021. </li>
+	  <li> Quantum field-theoretic machine learning, Plymouth University, 28 Apr. 2021. </li>
+	  <li> Quantum field-theoretic machine learning, Particle Physics seminar, Swansea University, 7 Apr. 2021. </li>
+	  <li> Probabilistic graphical models: Markov random fields and Boltzmann machines, Topological data analysis seminar, Swansea University, 9 Feb. 2021. </li>
+	  <li> Machine learning as a physical observable: Renormalization, symmetry breaking and histogram reweighting, Coventry University, 27 Jan. 2021. </li>	  
 	  <li> Machine learning as a physical observable: Renormalization, symmetry breaking and histogram reweighting, Universität Bielefeld, 12 Jan. 2021. </li>
 	  <li> Adding machine learning within Hamiltonians: Renormalization group transformations, symmetry breaking and restoration, <a href="http://www.physik.uni-leipzig.de/~janke/CompPhys20/">CompPhys20 </a>, Universität Leipzig, 3-5 Dec. 2020. </li>
 	  <li> Adding machine learning within Hamiltonians: Renormalization group transformations, symmetry breaking and restoration, Universität Heidelberg, 28 Oct. 2020. </li>
@@ -79,10 +112,9 @@
 	  <li>Machine learning and histogram reweighting: A synergistic approach to phase transitions, <a href="http://europlex.unipr.it/">European Network for Particle Physics, Lattice Field Theory and Extreme Computing</a>, 2 Jul. 2020.</li>  
 	<li>Phase structure of hot and dense systems: a machine learning approach, European Commission, Research Executive Agency, Brussels, Belgium, 15 Jan. 2020. </li>  
 	</ul>
-      </div>
-    </div>
+	</div>
 
-   
-    <div>
+</div>
+   </div>
   </body>
 </html>
